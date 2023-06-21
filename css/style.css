@@ -1,0 +1,342 @@
+@import url('https://fonts.cdnfonts.com/css/swiss-721');
+
+:root {
+    --gray: #c2c2c2;
+    --white: #ffffff;
+    --light-white: #f4f4f4;
+    --orange: #ff9000;
+    --black: #222222;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Swiss 721', Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+/* Filters */
+.Acura,
+.Asuna,
+.Alfa-Romeo,
+.Am-General,
+.American-Austin,
+.American-Motors,
+.Auburn,
+.Audi,
+.Austin,
+.Avanti,
+.Baic,
+.Bentley,
+.Bertone,
+.Buick,
+.Cadillac,
+.Checker,
+.Chevrolet,
+.Crysler,
+.Citroen,
+.Crusader-Boat,
+.Daewoo,
+.Daihatsu,
+.Datsun,
+.Desoto,
+.Detomaso,
+.Dodge,
+.Eagle,
+.Edsel,
+.Faw,
+.Ferrari,
+.Fiat,
+.Ford,
+.Frazer,
+.Freightline,
+.Geo,
+.Henry-J,
+.Hilman,
+.Hino,
+.Honda,
+.Hudson,
+.Hummer,
+.Hyundai,
+.Ic-corp,
+.Infiniti,
+.International,
+.Isusu,
+.Isuzu,
+.Iveco,
+.Jaguar,
+.Jeep,
+.Jensen,
+.Kaiser,
+.Kenworth,
+.Kia,
+.Laforza,
+.Lamborghini,
+.Lancia,
+.Land-Rover,
+.Licoln,
+.Lotus,
+.Man,
+.Maserati,
+.Maybach,
+.Mazda,
+.Mercedes-Benz,
+.Mercruiser-Engine,
+.Mercury-Engine-Marine,
+.Mercury,
+.Mercur,
+.Mg,
+.Mini,
+.Mitsubishi,
+.Nash,
+.Nissan,
+.Nsu,
+.Oldsmobile,
+.Opel,
+.Packard,
+.Panoz,
+.Peterbilt,
+.Peugeot,
+.Plymounth,
+.Pontiac,
+.Porsche,
+.Qvale,
+.Ram,
+.Renault,
+.Rolls-royce,
+.Rover,
+.Saab,
+.Saturn,
+.Scania,
+.Scion,
+.Seat,
+.Shelby,
+.Smart,
+.Srt,
+.Sterling,
+.Studebaker,
+.Subaru,
+.Suzuki,
+.Toyota,
+.Triumph,
+.Vam,
+.Vauxhall,
+.Volkswagen,
+.Volvo,
+.Workhorse,
+.Yugo,
+.Bmw,
+.Gmc,
+.Lexus {
+  display: none;
+}
+
+
+.filters__wrapper {
+  background-color: var(--black);
+  background-image: url(https://panel.sumaconsultoria.mx/ciosa/elements/filters-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  /* min-height: 520px; */
+}
+
+.filters__content {
+  padding: 0 20px;
+}
+
+.filters__sections {
+  max-width: 1250px;
+  padding: 45px 0;
+  margin: 0 auto;
+}
+
+.filters__titles {
+  line-height: 1.2;
+}
+
+.filters__titles h1 {
+  color: var(--orange);
+  font-size: 35px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.filters__titles h2 {
+  color: var(--white);
+  font-size: 27px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.filters__inputs {
+  width: 40%;
+  display: grid;
+  gap: 35px;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 27px;
+}
+
+.container-sec {
+  position: relative;
+}
+
+.selectbox {
+  width: auto;
+  margin: auto;
+  position: relative;
+}
+
+.select {
+  box-sizing: border-box;
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 10px 20px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  position: relative;
+  gap: 10px;
+  z-index: 1;
+  transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.select h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.select input {
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 16px;
+  box-shadow: none;
+  outline: none;
+  padding: 2px 0;
+}
+
+.select input::placeholder {
+  color: var(--white);
+}
+
+.orange {
+  box-sizing: border-box;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  justify-content: center;
+}
+
+.orange span {
+  font-size: 16px;
+}
+
+.arrow {
+  color: var(--orange);
+  font-size: 22px;
+}
+
+.opciones {
+  position: absolute;
+  background: var(--white);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+  overflow: auto;
+  top: 50px;
+  z-index: 100;
+  width: 83%;
+  max-height: 300px;
+  display: none;
+  padding: 0 20px;
+  text-align: center;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.opciones.active {
+  display: block;
+  animation: fadeIn 0.3s forwards;
+  -webkit-animation: fadeIn 0.3s forwards;
+}
+
+.opcion {
+  text-decoration: none;
+}
+
+.opc1,
+.opc2,
+.opc3,
+.opc4 {
+    color: var(--black);
+    font-size: 12px;
+}
+
+.opciones-input {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.opciones-input input {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.contenido-select  {
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .filters__inputs {
+    width: 100%;
+  }
+
+  .filters__titles h1 {
+    font-size: 24px;
+  }
+
+  .filters__titles h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .filters__wrapper {
+    background-position: 100% 50%;
+  }
+  
+  .filters__inputs {
+    grid-template-columns: 1fr;
+  }
+
+  .orange {
+    width: 100%;
+  }
+}
